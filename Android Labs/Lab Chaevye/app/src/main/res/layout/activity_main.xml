@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcActivity">
+
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="45dp"
+        android:hint="Введите сумму"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_margin="1dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="40dp"
+        android:text="0%"
+        app:layout_constraintBottom_toTopOf="@+id/tv_label_tip"
+        app:layout_constraintEnd_toStartOf="@+id/sb_percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_amount"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/sb_percent"
+        android:layout_width="258dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_label_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_percent"
+        app:layout_constraintTop_toTopOf="@+id/et_amount"
+        app:layout_constraintVertical_bias="0.775"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_label_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="15dp"
+        android:text="Чаевые"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_margin="1dp"
+        android:layout_marginBottom="13dp"
+        android:background="@color/color"
+        android:text="$0.00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_label_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_tip"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_label_total"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="14dp"
+        android:text="Итог"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tip"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="271dp"
+        android:layout_height="42dp"
+        android:layout_margin="1dp"
+        android:layout_marginBottom="326dp"
+        android:background="@color/color"
+        android:text="$0.00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_total"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
