@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Галлерея</string>
+    <string name="search">Поиск</string>
+    <string name="move">Наверх</string>
+    <string name="clear">Очистить</string>
+    <string name="clear_search">Очистить поиск</string>
+    <string name="move_to_top">Наверх</string>
+    <string name="search_hint">Поиск Flickr</string>
+    <string name="download">Скачать</string>
+    <string name="open_in_app">Открыть в App</string>
+    <string name="settings_description">Описание</string>
+</resources>
